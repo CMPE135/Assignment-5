@@ -2,9 +2,9 @@
 
 San Jose State University CMPE 135 Object Oriented Analysis Design
 
-## [Rock Paper Scissors](https://github.com/nemanjarajic/object-oriented-design/tree/main/rock_paper_scissors)
-- Command line game implementing OOD principles
+## [Rock Paper Scissors](https://github.com/CMPE135/Assignment-5)
+- GUI game implementing OOD principles
 - Each game has 20 rounds
-- Prompt the human player for each round’s choice of rock, paper, or scissors
-- “-m" for machine learning chooser and "-r" for random chooser
+- Click button to chooserock, paper, or scissors
+- Computer player use machine learning algorithm to predict human player's choice
 - ML Chooser save and load file "previous_choices.txt"

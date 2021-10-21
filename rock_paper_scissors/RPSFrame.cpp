@@ -1,7 +1,7 @@
 #include "RPSFrame.hpp"
 
-RPSFrame::RPSFrame() 
-        : wxFrame(NULL, wxID_ANY, "Rock Paper Scissors: 20 rounds/game", wxPoint(50,50), wxSize(450,340)),
+RPSFrame::RPSFrame(const wxString& title, const wxPoint& pos, const wxSize& size)
+        : wxFrame(NULL, wxID_ANY, title, pos, size),
           computer{},
           round(0), tie(0), humanWin(0), computerWin(0) {
     this->Bind(wxEVT_CLOSE_WINDOW, &RPSFrame::OnClose, this);
@@ -127,7 +127,7 @@ RPSFrame::RPSFrame()
     // End Frame
     frameSizer->AddSpacer(10);
     frameSizer->Add(mainPanel, 0, wxALIGN_CENTER, 0);
-    SetSizerAndFit(frameSizer);
+    SetSizer(frameSizer);
     
     // Status Bar
     CreateStatusBar();

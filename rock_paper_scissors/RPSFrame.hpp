@@ -9,7 +9,7 @@ using namespace std;
 
 class RPSFrame: public wxFrame {
   public:
-    RPSFrame();
+    RPSFrame(const wxString& title, const wxPoint& pos, const wxSize& size);
   private:
     ComputerPlayer computer;
     wxStaticText *roundCount;
